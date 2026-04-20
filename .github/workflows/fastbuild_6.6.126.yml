@@ -547,7 +547,7 @@ jobs:
         run: |
             cd kernel_workspace/common
             wget https://github.com/Goldzxcbug/Droidspaces_Kernel_patch/raw/refs/heads/main/OKI/6.6/Kernel_6.6.patch
-            patch -p1 -N -F 3 < 'Kernel_6.6.patch
+            patch -p1 -N -F 3 < 'Kernel_6.6.patch'
             cd ../
             # 修复 [✗] PID namespace 和 [✗] IPC namespace
             echo "CONFIG_SYSCTL=y" >> ./common/arch/arm64/configs/gki_defconfig
